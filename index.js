@@ -1,3 +1,4 @@
+//.......................................................make everything to be accessable here.............................................................
 const time=document.querySelector('.watch .time');
 const Start=document.getElementById('Start');
 const Stop=document.getElementById('Stop');
@@ -7,7 +8,7 @@ let msec=0;
 let interval=null;
 
 
-//Start stop reset button action
+//..........................................................Start stop reset button action......................................................
 
 Start.addEventListener('click',start);
 Stop.addEventListener('click',stop);
@@ -17,11 +18,11 @@ Reset.addEventListener('click',reset);
 
 
 
-//concept behind the stop watch
+//..........................................................concept behind the stop watch........................................................
+
+
 function timer(){
     msec++;
-
-
     
     let hr=Math.floor(msec/360000);
     let min=Math.floor((msec-(hr*360000))/6000);
@@ -40,12 +41,10 @@ function timer(){
     if(hr<10){
         hr='0'+hr;
     }
-
-
     time.innerText=`${hr}:${min}:${sec}:${milisec}`;
 }
 
-// adding interval in the stop watch
+// ........................................................adding interval in the stop watch..................................................
 function start(){
     if(interval){
         return

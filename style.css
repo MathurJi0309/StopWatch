@@ -1,0 +1,60 @@
+
+/*..........................................................generalize....................................................*/
+
+*{
+
+    font-family: 'fira sans',sans-serif;
+}
+body{
+    background: rgb(13, 36, 17);
+    color: azure;
+}
+
+/*..........................................................watch....................................................*/
+.watch{
+    text-align: center;
+    background-color: black;
+    width: 100%;
+    max-width: 600px;
+    margin: 4rem auto;
+    padding: 1rem 2rem;
+    border-radius: 0.8rem;
+}
+/*..........................................................timer and its controlers....................................................*/
+.time{
+    font-size: 5rem;
+    margin: 2rem 0;
+}
+
+.controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.controls button{
+    
+    cursor: pointer;
+
+
+    color: aquamarine;
+    font-size: 1.5rem;
+    background-color: rgb(40, 40, 40);
+    margin: 1rem 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+
+
+    transition: 0.4s;
+
+}
+
+/*..........................................................things after clicking the buttons....................................................*/
+
+button:hover{
+    opacity: 0.7;
+}
+button:active{
+    background-color: rgb(97, 26, 13);
+}
