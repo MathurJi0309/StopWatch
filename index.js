@@ -8,7 +8,7 @@ let msec=0;
 let interval=null;
 
 
-//..........................................................Start stop reset button action......................................................
+//..........................................................Start stop reset button action-section......................................................
 
 Start.addEventListener('click',start);
 Stop.addEventListener('click',stop);
