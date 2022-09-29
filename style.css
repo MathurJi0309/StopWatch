@@ -64,28 +64,3 @@ button:active{
     flex-direction: row;
     justify-content: space-between;
 }
-.xy{
-    height: 100px;
-    width:100px;
-}
-#a{
-    opacity: 100%;
-}
-#b{
-    opacity: 70%;
-}
-#c{
-    opacity: 35%;
-}
-#d{
-    opacity: 10%;
-}
-#e{
-    opacity: 35%;
-}
-#f{
-    opacity: 70%;
-}
-#g{
-    opacity: 100%;
-}
