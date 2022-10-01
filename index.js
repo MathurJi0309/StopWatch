@@ -15,7 +15,9 @@ let interval=null;
 Start.addEventListener('click',start);
 Start.addEventListener('click',tune);
 Stop.addEventListener('click',stop);
+Stop.addEventListener('click',tuneoff);
 Reset.addEventListener('click',reset);
+Reset.addEventListener('click',tuneoff);
 
 
 
@@ -69,4 +71,7 @@ function reset(){
 }
 function tune(){
     audio.play();
+}
+function tuneoff(){
+    audio.pause();
 }
