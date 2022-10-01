@@ -3,6 +3,9 @@ const time=document.querySelector('.watch .time');
 const Start=document.getElementById('Start');
 const Stop=document.getElementById('Stop');
 const Reset=document.getElementById('Reset');
+const audio=new Audio();
+audio.src="./audio/sound.mp3";
+
 
 let msec=0;
 let interval=null;
@@ -11,8 +14,12 @@ let interval=null;
 //..........................................................Start stop reset button action-section......................................................
 
 Start.addEventListener('click',start);
+Start.addEventListener('click',tune);
 Stop.addEventListener('click',stop);
+Stop.addEventListener('click',tuneoff);
 Reset.addEventListener('click',reset);
+Reset.addEventListener('click',tuneoff);
+
 
 
 
@@ -63,4 +70,10 @@ function reset(){
     stop();
     msec=0;
     time.innerText='00:00:00:00';
+}
+function tune(){
+    audio.play();
+}
+function tuneoff(){
+    audio.pause();
 }
