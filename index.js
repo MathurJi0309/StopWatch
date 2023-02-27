@@ -49,7 +49,7 @@ function timer(){
     time.innerText=`${hr}:${min}:${sec}:${milisec}`;
 }
 
-// ........................................................adding interval in the stop watch..................................................
+// ........................................................❤❤❤❤adding interval in the stop watch❤❤❤❤..................................................
 function start(){
     if(interval){
         return
